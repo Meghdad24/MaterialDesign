@@ -45,15 +45,23 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab_main_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="20sp"
-        android:src="@android:drawable/ic_input_add"
-        app:borderWidth="0.5sp"
-        app:tint="@color/white"
-        app:maxImageSize="40sp" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_main_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20sp"
+            android:src="@android:drawable/ic_input_add"
+            app:borderWidth="0.5sp"
+            app:tint="@color/white"
+            app:maxImageSize="40sp"
+            android:layout_gravity="bottom|start"
+            android:contentDescription="@string/a_button_for_favorite"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </RelativeLayout>
